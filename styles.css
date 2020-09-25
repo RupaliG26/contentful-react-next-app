@@ -1,0 +1,138 @@
+/* Variables */
+:root {
+  --body-color: #f6f6f6;
+  --name-color: #000;
+  --body-font-family: "Avenir Next Cyr W00 Regular", Arial, sans-serif;
+  --h1-color: #1a1f36;
+  --h2-color: #7b818a;
+  --light-grey: #a3acb9;
+  --container-width-max: 1280px;
+  --header-color: #fff;
+  --chef-color: #28b88d;
+  --inline-block: inline-block;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--body-color);
+  font-family: var(--body-font-family);
+}
+
+.head-section {
+  box-shadow: 0 1px 1px -1px rgba(0,0,0,.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: var(--header-color);
+  padding: 10px 5%;
+}
+
+.container {
+  max-width: var(--container-width-max);
+  padding: 45px 25px;  
+}
+
+.back-btn {
+  background: var(--light-grey);
+  color: var(--name-color);
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-weight: 600;
+  color: var(--h1-color);
+  margin: 6px 0 12px;
+  font-size: 27px;
+  line-height: 32px;
+}
+
+h2 {
+  color: var(--h2-color);
+  margin: 8px 0;
+}
+
+a {
+  color: var(--name-color);
+  text-decoration: none;
+  display: var(--inline-block);
+  height: 100%;
+}
+
+header {
+  text-align: center;
+  margin-top: 90px;
+  z-index: -1;
+  position: relative;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recipe-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  justify-content: space-around;
+}
+
+.recipe-card {
+  display: block;
+  border-radius: 10px;
+  margin: 10px 0;
+  width: 45%;
+  text-decoration: none;
+  box-shadow: -20px 20px 36px #abacad, 20px -20px 60px #ffffff;
+}
+
+img {
+  width: 100%;
+}
+
+.recipe-details-section {
+  padding: 10px 2%;
+    width: 80.7%;
+    background: #fff;
+    margin: 100px auto 30px auto;
+}
+
+.tag {
+  margin: 0 2px 5px 0;
+  background-color: #f6f6f6;
+  color: #716d6a;
+  display: var(--inline-block);
+  font-size: 10px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  padding: 5px;
+  text-transform: uppercase;
+}
+
+.chef-name {
+  color: var(--chef-color);
+}
+
+.recipe-list-view {
+  display: var(--inline-block);
+  padding: 12px;
+}
+
+@media only screen and (max-width: 980px) {
+  .container {
+    flex-direction: column;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .recipe-card {
+    display: block;
+    border-radius: 8px;
+    flex: 1 0 100%;
+  }
+
+}

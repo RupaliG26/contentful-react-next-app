@@ -1,0 +1,25 @@
+{
+  "name": "contentful-react-next-app",
+  "version": "2.0.0",
+  "description": "NextJS React app using typescript",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "contentful": "^7.10.0",
+    "dotenv": "^8.2.0",
+    "next": "latest",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-markdown": "^4.2.2",
+    "rxjs": "^6.5.3"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.2",
+    "@types/react": "^16.9.17",
+    "typescript": "^3.7.4"
+  }
+}
